@@ -1,0 +1,19 @@
+<?php
+function hellouser_menu(){
+    $success = array();
+    $success['add_user'] = array(
+        'title' => 'SUCCEEEEEESSSSS!!!',
+        'page callback' => 'success_msg',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $success;
+}
+
+function success_msg(){
+    return "<h3>Congrats on doing that!</h3>";
+}
+
+function hellouser_user_insert(){
+    $_GET['destination'] = 'add_user';
+}
