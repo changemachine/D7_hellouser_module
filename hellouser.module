@@ -15,5 +15,6 @@ function success_msg(){
 }
 
 function hellouser_user_insert(){
-    $_GET['destination'] = 'add_user';
+    drupal_set_message(t('Winner winner, chicken dinner!'), 'status');
+    //$_GET['destination'] = 'add_user';
 }
